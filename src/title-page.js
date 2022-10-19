@@ -8,7 +8,23 @@ export function domLoader() {
     navbar.classList.add('navbar')
     body.insertBefore(navbar, container)
 
-    let menuLink = document.createElement('a')
+    const menuLink1 = document.createElement('a')
+    menuLink1.classList.add('a1')
+    // menuLink1.href= ''
+    menuLink1.textContent = 'Menu'
+    navbar.appendChild(menuLink1)
+
+    let menuLink2 = document.createElement('a')
+    menuLink2.classList.add('a2')
+    // menuLink2.href = ''
+    menuLink2.textContent = 'Contact'
+    navbar.appendChild(menuLink2)
+
+    let menuLink3 = document.createElement('a')
+    menuLink3.classList.add('a3')
+    // menuLink3.href = ''
+    menuLink3.textContent = 'Home'
+    navbar.appendChild(menuLink3)
 
     let header = document.createElement('h1')
     header.textContent = 'The Boba Lounge'
