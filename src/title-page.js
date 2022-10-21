@@ -16,7 +16,7 @@ export function domLoader () {
 
   const mainImage = document.createElement('img')
   mainImage.src = '../minimalist-still-life-asian-tea.jpg'
-  mainImage.classList.add('.main-image')
+  mainImage.classList.add('main-image')
   container.appendChild(mainImage)
 
   const copyPara = document.createElement('p')

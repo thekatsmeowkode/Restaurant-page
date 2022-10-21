@@ -42,9 +42,11 @@ export function createMenu () {
   addOnMenu.classList.add('add-ons')
   sideBarItems.appendChild(addOnMenu)
 
+  const addOns = ['Add-On Menu', 'Boba Pearls', 'Lychee', 'Jelly', 'Taro', 'Chia']
   for (let j = 0; j < 6; j++) {
     const para = document.createElement('p')
+    para.textContent = addOns[j]
     addOnMenu.appendChild(para)
   }
-  
+
 }
