@@ -1,6 +1,7 @@
 import { domDeleter } from './index.js'
 import { domLoader } from './title-page.js'
 import { createMenu } from './menu.js'
+import { createContacts } from './contact.js'
 
 export function createTabs (div) {
   const body = document.querySelector('#body')
@@ -24,13 +25,16 @@ export function createTabs (div) {
   navbar.appendChild(menuLink3)
 
   menuLink3.addEventListener('click', function () {
-    const body = document.querySelector('#body')
     domDeleter(body)
     domLoader()
   })
 
+  menuLink2.addEventListener('click', function () {
+    domDeleter(body)
+    createContacts()
+  })
+
   menuLink1.addEventListener('click', function () {
-    const body = document.querySelector('#body')
     domDeleter(body)
     createMenu()
   })

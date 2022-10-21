@@ -11,6 +11,7 @@ export function createMenu () {
   const mainMenuItems = document.createElement('div')
   mainMenuItems.classList.add('menu-items')
   container.appendChild(mainMenuItems)
+
   const pictureTags = document.createElement('div')
   pictureTags.classList.add('pic-tags')
   container.appendChild(pictureTags)
@@ -48,5 +49,5 @@ export function createMenu () {
     para.textContent = addOns[j]
     addOnMenu.appendChild(para)
   }
-
+  
 }
