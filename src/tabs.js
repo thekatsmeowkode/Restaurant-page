@@ -20,7 +20,6 @@ export function createTabs (div) {
 
   const menuLink3 = document.createElement('a')
   menuLink3.classList.add('a3')
-  // menuLink3.href = ''
   menuLink3.textContent = 'Home'
   navbar.appendChild(menuLink3)
 
